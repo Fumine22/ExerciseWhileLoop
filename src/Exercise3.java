@@ -8,16 +8,16 @@ public class Exercise3 {
         int even;
         int sum = 0;
         if (number >= 0) {
-        while (digit > 0) {
-            even = digit % 10;
-            digit /= 10;
-            if (even % 2 != 0) {
-                continue;
+            while (digit > 0) {
+                even = digit % 10;
+                digit /= 10;
+                if (even % 2 != 0) {
+                    continue;
+                }
+                sum += even;
             }
-            sum += even;
-        }
-        System.out.println(sum);
-        return sum;
+            System.out.println(sum);
+            return sum;
         } else {
             return -1;
         }
